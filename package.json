@@ -16,10 +16,20 @@
   "engines": {
     "node": ">=8"
   },
+  "scripts": {
+    "build": "webpack --config examples/webpack.config.js"
+  },
   "dependencies": {
     "loader-utils": "^1.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "extract-loader": "^3.0.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^4.0.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
   "keywords": [
     "webpack",
     "loader",
