@@ -78,6 +78,13 @@ See example image above.
 `gfm-loader?gfm=build/css/gfm.css&style=build/css/bundle.css&border=true`
 ```
 
+## Changelog
+
+**2.0.0:**
+
+- Rename parameter `href` to `gfm`
+- Add parameters `style` and `border`
+
 ## Related
 
 - [setup-webpack](https://github.com/jneidel/setup-webpack) - Simplifies eg. markdown transpilation; the module this loader was built for
