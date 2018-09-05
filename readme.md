@@ -26,7 +26,7 @@ In webpack config (read loaders from bottom to top):
       test: /\.md$/,
       use : [
         `file-loader?name=<output-path>`, // Save to given path
-        `gfm-loader`, // Wrap html in body
+        `gfm-loader`, // Wrap html in body, apply gfm styles
         "extract-loader", // Extract html
         "html-loader", // Load html
         "markdown-loader", // Transfrom md -> html
@@ -36,29 +36,34 @@ In webpack config (read loaders from bottom to top):
 }
 ```
 
-## API
-
-### gfm-loader[?href=path]
-
-**href:**
-
-Default: `https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css`
-
-Pass the `href` value that will be set as stylesheet source.
-
-```js
-`gfm-loader?href=http://gfm.com` // Sample url
-```
-
-Can be local, eg. for offline usage:
-
-```js
-`gfm-loader?href=../css/gfm.css`
-```
-
 ## Example
 
-See [`examples/webpack.config.js`](examples/webpack.config.js).
+See: [`examples/webpack.config.js`](examples/webpack.config.js)
+
+## API
+
+### gfm-loader[?gfm=<path>&style=<path>]
+
+**gfm:**
+
+<table><tr>
+  <td>Default: <code>https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css</code></td>
+</tr></table>
+
+`href` for the gfm stylesheet.
+
+```js
+`gfm-loader?gfm=build/css/gfm.css`
+```
+
+**style:**
+
+`href` for an additional stylsheet.
+To customize gfm styles.
+
+```js
+`gfm-loader?gfm=build/css/gfm.css&style=build/css/bundle.css`
+```
 
 ## Related
 
