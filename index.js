@@ -3,8 +3,6 @@ const loaderUtils = require( "loader-utils" );
 module.exports = function gfmLoader( content ) {
   const query = loaderUtils.parseQuery( this.query );
 
-  console.log(query)
-
   const gfmPath = query.gfm ?
     query.gfm :
     "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css";
