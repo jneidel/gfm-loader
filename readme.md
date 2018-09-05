@@ -38,11 +38,15 @@ In webpack config (read loaders from bottom to top):
 
 ## Example
 
-See: [`examples/webpack.config.js`](examples/webpack.config.js)
+**See: [`examples/webpack.config.js`](examples/webpack.config.js)**
+
+Rendered example (with `border=true`):
+
+![Rendered example](examples/rendered.png)
 
 ## API
 
-### gfm-loader[?gfm=<path>&style=<path>]
+### gfm-loader[?gfm=<path>&style=<path>&border=true]
 
 **gfm:**
 
@@ -63,6 +67,15 @@ To customize gfm styles.
 
 ```js
 `gfm-loader?gfm=build/css/gfm.css&style=build/css/bundle.css`
+```
+
+**border:**
+
+Include styles for a Github style border around the body.
+See example image above.
+
+```js
+`gfm-loader?gfm=build/css/gfm.css&style=build/css/bundle.css&border=true`
 ```
 
 ## Related
