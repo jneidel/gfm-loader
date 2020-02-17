@@ -30,6 +30,7 @@ module.exports = function gfmLoader( content ) {
     null;
 
   return `<head>
+  <meta charset="UTF-8"/>
   <link rel="stylesheet" type="text/css" href="${gfmPath}">
   ${border ?  border : "" }
   ${style ? style : ""}
