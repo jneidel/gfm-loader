@@ -87,6 +87,11 @@ See example image above.
 
 ## Changelog
 
+**2.1.0:**
+
+- Add parameter `js`
+- Add UTF-8 as encoding
+
 **2.0.0:**
 
 - Rename parameter `href` to `gfm`
