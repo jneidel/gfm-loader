@@ -14,7 +14,7 @@ module.exports = {
       test: /\.md$/,
       use : [
         `file-loader?name=docs.html`,
-        `gfm-loader?gfm=github-markdown.min.css&border=true`,
+        `gfm-loader?gfm=github-markdown.min.css&border=true&js=docs.js`,
         "extract-loader",
         "html-loader",
         "markdown-loader",

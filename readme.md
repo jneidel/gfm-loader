@@ -46,7 +46,7 @@ Rendered example (with `border=true`):
 
 ## API
 
-### gfm-loader[?gfm=<path>&style=<path>&border=true]
+### gfm-loader[?gfm=<path>&style=<path>&js=<path>&border=true]
 
 **gfm:**
 
@@ -67,6 +67,13 @@ To customize gfm styles.
 
 ```js
 `gfm-loader?gfm=build/css/gfm.css&style=build/css/bundle.css`
+```
+
+**js:**
+`src` for an additional script file for customization.
+
+```js
+`gfm-loader?js=build/js/bundle.js`
 ```
 
 **border:**

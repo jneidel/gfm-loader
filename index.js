@@ -29,11 +29,17 @@ module.exports = function gfmLoader( content ) {
 </style>` :
     null;
 
-  return `<head>
+  const js = query.js ?
+    `<script async="async" src="${query.js}"></script>` :
+    null;
+
+  return `
+<head>
   <meta charset="UTF-8"/>
   <link rel="stylesheet" type="text/css" href="${gfmPath}">
   ${border ?  border : "" }
   ${style ? style : ""}
+  ${js ? js : ""}
 </head>
 <body class="markdown-body">
   ${content}
